@@ -34,11 +34,11 @@ if __name__ == '__main__':
     print("Done")
 
     side_view_face_cascade = cv2.CascadeClassifier(
-        r"/home/alucard/.local/lib/python3.7/site-packages/cv2/data/lbpcascade_profileface.xml"
+        r"lbpcascade_profileface.xml"
     )
 
     frontal_face_cascade = cv2.CascadeClassifier(
-        r"/home/alucard/.local/lib/python3.7/site-packages/cv2/data/haarcascade_frontalface_default.xml"
+        r"haarcascade_frontalface_default.xml"
     )
 
     num = 0
