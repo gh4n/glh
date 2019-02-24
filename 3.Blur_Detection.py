@@ -10,15 +10,7 @@ import cv2
 import numpy
 
 from detection import estimate_blur
-from detection import fix_image_size
-
-def find_images(input_dir):
-    extensions = [".jpg", ".png", ".jpeg"]
-
-    for root, dirs, files in os.walk(input_dir):
-        for file in files:
-            if os.path.splitext(file)[1].lower() in extensions:
-                yield os.path.join(root, file)
+from utils import find_images
 
 dir = os.path.dirname(os.path.realpath(__file__))
 

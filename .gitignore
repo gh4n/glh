@@ -2,3 +2,6 @@
 /old
 /detection_cropped_output
 /detection_fullframe_output
+/detection_all_frames
+*.mp4
+*.pyc
