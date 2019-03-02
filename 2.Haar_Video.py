@@ -12,6 +12,7 @@ if __name__ == '__main__':
     FULLFRAME_OUTPUT_DIR = dir + "/detection_fullframe_output"
     CROPPED_OUTPUT_DIR = dir + "/detection_cropped_output"
     ALLFRAME_OUTPUT_DIR = dir + "/detection_all_frames"
+    BLUR_THRESHOLD = 100
 
     print("Cleaning output directories...")
     cleanDir(FULLFRAME_OUTPUT_DIR)
@@ -45,8 +46,8 @@ if __name__ == '__main__':
                 cv2.imwrite(CROPPED_OUTPUT_DIR + "/" + str(num_images) + ".png", roi_color)
 
                 blur_map, score, blurry = estimate_blur(roi_gray)
-                if score < 100:
-                    cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
+                if score < BLUR_THRESHOLD:
+                    cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),2)
                 else:
                     cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
                 

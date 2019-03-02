@@ -25,8 +25,6 @@ sort_nicely(img_paths)
 
 print("Writing " + OUTPUT_FILENAME + "...")
 
-
-
 height, width, layers = cv2.imread(INPUT_DIR + "/" + img_paths[0]).shape
 size = (width,height)
 writer = cv2.VideoWriter(OUTPUT_FILENAME, cv2.VideoWriter_fourcc(*'MP4V'), 30, size)
