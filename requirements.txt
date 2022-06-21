@@ -14,7 +14,7 @@ isodate==0.6.0
 lockfile==0.12.2
 lxml==4.3.0
 msgpack==0.6.1
-numpy==1.16.1
+numpy==1.22.0
 opencv-python==4.0.0.21
 packaging==19.0
 pandas==0.24.1
