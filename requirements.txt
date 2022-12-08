@@ -1,7 +1,7 @@
 appdirs==1.4.3
 btrfsutil==1.1.0
 CacheControl==0.12.5
-certifi==2018.10.15
+certifi==2022.12.7
 chardet==3.0.4
 chrome-gnome-shell==0.0.0
 colorama==0.4.1
